@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body class="blackout">
+    <main class="page-main">
+      <!-- Герой (Hero)-->
+      <button type="button" class="franchise__button" data-modal-open>
+        Read more
+        <svg
+          class="franchise__button-arrow"
+          width="12"
+          height="12"
+          viewBox="0 0 12 12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3.96959 1.22701C3.82899 1.36765 3.75 1.55838 3.75 1.75726C3.75 1.95613 3.82899 2.14686 3.96959 2.28751L7.68209 6.00001L3.96959 9.71251C3.83297 9.85396 3.75738 10.0434 3.75908 10.2401C3.76079 10.4367 3.83967 10.6248 3.97873 10.7639C4.11778 10.9029 4.30589 10.9818 4.50254 10.9835C4.69919 10.9852 4.88864 10.9096 5.03009 10.773L9.27284 6.53026C9.41344 6.38961 9.49243 6.19888 9.49243 6.00001C9.49243 5.80113 9.41344 5.6104 9.27284 5.46976L5.03009 1.22701C4.88944 1.0864 4.69871 1.00742 4.49984 1.00742C4.30097 1.00742 4.11024 1.0864 3.96959 1.22701V1.22701Z"
+          />
+        </svg>
+      </button>
+    </main>
+    <!-- Модал -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="franchise__modal">
+        <button class="franchise__button-close" data-modal-close>
+          <svg class="franchise__img" width="20" height="20">
+            <use xlink:href="#icon-close-black"></use>
+          </svg>
+        </button>
+        <div class="franchise__modal-content">
+          <h1 class="franchise__modal-title">
+            Thank you for your interest in owning an Ice Cream shop
+          </h1>
+          <p class="franchise__modal-text">
+            Due to the overwhelming volume of franchise requests we are not
+            accepting new franchisee applications at this time. Once the
+            application process resumes, we will contact you for further
+            information. Please fill out the contact information below and we
+            will reach out for additional information. We appreciate your
+            patience.
+          </p>
+          <!--  Ім'я -->
+          <form name="franchise__modal-form">
+            <label class="franchise__form-label" for="person-name"></label>
+            <div class="franchise__form-control">
+              <input
+                class="franchise__form-input"
+                id="person-name"
+                type="text"
+                name="person-name"
+                placeholder="Name"
+              />
+            </div>
+            <!--  Телефон -->
+            <label class="franchise__form-label" for="person-phone"></label>
+            <div class="franchise__form-control">
+              <input
+                class="franchise__form-input"
+                id="person-phone"
+                type="tel"
+                name="person-phone"
+                placeholder="Phone"
+              />
+            </div>
+            <!--  Пошта -->
+            <label class="franchise__form-label" for="person-mail"></label>
+            <div class="franchise__form-control">
+              <input
+                class="franchise__form-input"
+                id="person-mail"
+                type="email"
+                name="person-mail"
+                placeholder="Email"
+              />
+            </div>
+            <!--  Коментар -->
+            <label class="franchise__form-label" for="person-comment"></label>
+            <textarea
+              class="franchise__form-textarea"
+              id="person-comment"
+              name="person-comment"
+              placeholder="Comment"
+            ></textarea>
+            <!--  button -->
+            <button class="franchise__modal-button" type="submit">
+              Submit
+            </button>
+            <!-- <div class="modal-button">
+            </div> -->
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <!-- icon infa -->
+    <svg display="none">
+      <symbol id="icon-close-black" viewBox="0 0 32 32">
+        <path
+          d="m26.667 7.303-1.97-1.97-7.808 7.808-7.808-7.808-1.97 1.97 7.808 7.808-7.808 7.808 1.97 1.97 7.808-7.808 7.808 7.808 1.97-1.97-7.808-7.808 7.808-7.808z"
+        />
+      </symbol>
+    </svg>
+    <!-- <div class="menu-container" id="menu-container" data-menu> </div> -->
+  </body>
+</html>
