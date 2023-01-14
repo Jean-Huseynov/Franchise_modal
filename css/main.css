@@ -1,8 +1,8 @@
 /* button */
 .franchise__button {
   display: flex;
-  padding: 12px 51px 12px 34px;
-  gap: 7.75px;
+  padding: 12px 70px 12px 55px;
+  gap: 7px;
   align-items: center;
   text-decoration: none;
   font-family: "Montserrat";
@@ -56,6 +56,7 @@
   justify-content: center;
   align-items: center;
   position: absolute;
+  padding: 0px;
   top: 12px;
   right: 12px;
   background: none;
@@ -163,11 +164,6 @@
   font-size: 12px;
   line-height: 1.4;
   color: #131313;
-}
-
-.form__input:hover + .form__icon,
-.form__input:focus + .form__icon {
-  fill: #2196f3;
 }
 
 .franchise__form-textarea {
